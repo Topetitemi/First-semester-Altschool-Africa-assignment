@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Personal website</title>
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+<!--  wrapper for the whole layout -->
+    <main class="container">
+<!--       links to navigate through the pages -->
+      <div class="navigation-links">
+        <nav class="main-nav">
+          <ul class="navbar">
+            <li><a href="#home">About</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#login">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+<!-- about me/introduction section -->
+      <section id="home">
+        <div class="heading">
+          <h1>ABOUT ME</h1>
+        </div>
+         <div class="intro">
+           <figure>
+             <img src="./image/Dammy 2.jpeg" alt="Damilola">
+             <figcaption>HI, I'M BAMIKOLE TEMITOPE DAMILOLA</figcaption>
+           </figure>
+         </div>
+      <div class="intro-second">
+       <div class="short-intro grid">
+        <h3>Short introduction about me</h3>
+        <P>I am a disciplined and insightful young professional with strong academic history. I am a highly articulated and effective communicator, I work well with individuals on all levels.</P>
+       </div>
+       <div class="goals grid">
+        <h3>My goals</h3>
+        <P>My goals for joining Altschool Africa remains unshattered which includes but not    limited to:</P>
+        <ol>
+          <li>Becoming a world class software Engineer.</li>
+          <li>Gaining the required and relevant skills.</li>
+          <li>Building network of friends and acquitances.</li>
+          <li>Having a decent source of living.</li>
+        </ol>
+       </div>
+        <div class="education grid">
+          <h3>My Education</h3>
+        <ul>
+          <li>B.Agric(hons.)Agriculture, University of Ilorin kw/st-2019</li>
+          <li>SSCE, WASSCE-Anglican girls college-2013</li>
+          <li>Responsive web design-freecodecamp-Jan 2022</li>
+         </ul>
+        </div>
+         <div class="exp grid">
+          <h3>Job experience</h3>
+          <p>I have previously worked as a customer care representative at Zartech farm Ibadan</p>
+         </div>
+         <div class="hobby grid">
+          <h3>My hobbies</h3>
+          <p>My hobbies are quiet simple.I enjoy learning new things and making everyone around me happy</p>
+         </div>        
+     </div>
+     </section> 
+
+<!--       contact form section -->
+     <section id="contact">
+       <div class="heading">
+         <h1>Contact me</h1>
+       </div>
+       <form class="contact-form" method="post">
+       <div class="my-form">
+         <label for="name" >Name</label>
+         <input id="name" type="text" placeholder="Name" required minlength="4" maxlength="25"/>
+       </div>
+       <div class="my-form">
+         <label for="email">Email</label>
+         <input id="email" type="email" placeholder="Email" required minlength="4" maxlength="20"/>
+        </div>
+        <div class="my-form">
+          <label for="message">Message me</label>
+          <textarea name="message" id="message" cols="15" rows="4"></textarea>
+         </div>
+         <div class="my-form">
+           <select>
+             <option value="Gmail">Facebook</option>
+             <option value="telephone">Whatsapp</option>
+             <option value="twitter">Twitter</option>
+           </select>
+         </div>
+          <button class="contact-btn">Submit</button>
+        </form>
+      </div>  
+    </section>
+
+<!--       registration form section -->
+    <section id="register">
+      <div class="heading">
+        <h4>Register Today!</h4>
+      </div>
+      <div class="registration-form">
+        <form id="form" method="post">
+          <!-- First Name -->
+         <div class="login-group">
+           <label for="first name">First Name</label>
+           <input type="text" id="first name" name="first name" 
+           placeholder="First Name" required minlength="3" maxlength="30"/>
+         </div>
+               <!-- last name -->
+          <div class="login-group">
+            <label for="last name">Last Name</label>
+            <input type="text" id="last name" name="name" 
+            placeholder="Full Name" required minlength="3" maxlength="30"/>
+          </div>
+               <!-- Phone Number -->
+          <div class="login-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="08012345678" required/>
+          </div>
+               <!-- Gender -->
+          <div class="login-group">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+              <option value="male">Female</option>
+              <option value="female">Female</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+                  <!-- Email Address -->
+          <div class="login-group">
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Nigeria" required/>
+          </div>
+             <!-- State/Province -->
+          <div class="login-group">
+            <label for="state">State/Province</label>
+            <input type="text" id="state" name="state" placeholder="Kwara" required/>
+          </div>
+             <!-- Password -->
+          <div class="login-group">
+            <label for="password1">Password</label>
+            <input type="password" id="password1" placeholder="Create Password" name="password"
+             required/>
+          </div>
+            <!-- Confirm Password -->
+          <div class="login-group">
+            <label for="password2">Confirm Password</label>
+            <input type="password" id="password2" placeholder="Confirm Password"
+            required name="password"/>
+          </div>
+          <button type="submit">register</button>
+        </form>
+      </div>
+    </section>
+      
+     <!-- login section -->
+    <section id="login">
+     <div class="heading">
+     <span>LOGIN HERE</span>
+   </div>
+   <div class="log">
+     <form class="enter-details" method="post">
+       <div class="login-here">
+         <label for="username">username:</label>
+       <input type="text" id="username" required/>
+       </div>
+       <div class="login-here">
+        <label for="password">Password:</label>
+      <input type="password" id="password" required/>
+      </div>
+       <div class="login-text">
+        <a href="#">Forgot password?</a>
+      </div>
+      <div id="login-btn">
+        <button>Sign in</button>
+      </div>
+    </form>
+  </div>
+</section>
+    </main>
+ </body>
+</html>
